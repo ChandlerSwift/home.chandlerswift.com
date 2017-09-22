@@ -19,17 +19,28 @@
 <section>
 <h2>What can I do?</h2>
 <ul>
-	<li>Tweet <a href="https://twitter.com/swftbot">@swftbot</a> and get a response (occasionally)</li>
-	<li>Control my <a href="https://duluth.chandlerswift.com/light/">light</a>:
-            <ul>
-                <li><b>@swftbot light on</b> &mdash; turns light on</li>
-                <li><b>@swftbot light off</b> &mdash; turns light off</li>
-                <li><b>@swftbot light blue</b> &mdash; turns LEDs blue (<a href="https://www.w3.org/TR/SVG/types.html#ColorKeywords">acceptable colors</a>)</li>
-            </ul>
-        </li>
-        <!-- bench pics? -->
+    <li>Control my <a href="/light/">light</a>:
+        <ul>
+            <li><b>@swftbot light on</b> &mdash; turns light on</li>
+            <li><b>@swftbot light off</b> &mdash; turns light off</li>
+            <li><b>@swftbot light aliceblue</b> &mdash; turns LEDs <span style="background-color:aliceblue;">aliceblue</span> (<a href="https://www.w3.org/TR/SVG/types.html#ColorKeywords">acceptable colors</a>)</li>
+            <li><b>@swftbot light #ffff00</b> or, equivalently, <b>#ff0</b> &mdash; turns lights yellow</li>
+        </ul>
+    </li>
+    <li>Get a <a href="/bench/">picture of my workbench</a>:
+        <ul>
+            <li><b>@swftbot bench</b></li>
+        </ul>
+    </li>
 </ul>
 </section>
+<section>
+    <h2>Notes</h2>
+    <dl>
+        <dt>Whoops, you already said that!</dt>
+        <dd>Twitter prevents you from posting two tweets with the same content twice in a 24 hour period. <a href="https://support.twitter.com/articles/68809">[source]</a> To work around this issue, @swftbot permits extra characters at the end of tweets, which are ignored. For example, to toggle the light repeatedly, one might <b>@swftbot light on</b>, <b>@swftbot light off</b>, <b>@swftbot light on again</b>, <b>@swftbot light off plz</b>, &hellip;.</dd>
+        <dt>@swftbot doesn't respond to your tweets :(</dt>
+        <dd>Due to some limitations in the Twitter API, @swftbot can't see your tweets if they're protected. We're looking at workarounds for this, but for the time being <a href="https://open.spotify.com/track/6V50MyHPGhEmwYu0Wdyf0t">that's just the way it is</a>.</dd>
 <section>
 <h2>Source</h2>
 <p>Improvements? <a href='https://github.com/ChandlerSwift/duluthsite'>Send a pull request on GitHub</a>.</p>
