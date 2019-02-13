@@ -1,0 +1,3 @@
+[submodule "robot"]
+	path = robot
+	url = git@github.com:ChandlerSwift/duluth-robot-site
