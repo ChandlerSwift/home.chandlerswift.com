@@ -1,6 +1,6 @@
 [submodule "robot"]
 	path = robot
 	url = git@github.com:ChandlerSwift/duluth-robot-site
-[submodule "arduino-class"]
+[submodule "arduino"]
 	path = arduino
 	url = git@github.com:ChandlerSwift/arduino-class
