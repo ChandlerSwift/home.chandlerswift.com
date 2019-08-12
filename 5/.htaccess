@@ -1,7 +1,0 @@
-#RewriteEngine on
-#RewriteCond %{REQUEST_FILENAME} !-f
-#RewriteCond %{REQUEST_FILENAME} !-d
-#RewriteRule ^(.*)$ /5/index.php?path=$1 [NC,QSA,L]
-
-RewriteEngine on
-RewriteRule ^(.*)$ https://duluth.chandlerswift.com/light/$1?redirect=1 [L,R=302,QSA]
