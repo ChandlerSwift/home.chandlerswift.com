@@ -26,7 +26,7 @@ function printUptime() {
 <section>
 <h2>Servers</h2>
 <ul>
-<li>Web: <span class="up">Up <?= printUptime() ?></span></li>
+<li>Web: Up <?= printUptime() ?></li>
 
 <li>UPS: <?php $ups_info = json_decode(file_get_contents('http://ups-monitor/')); ?>
 <ul>
@@ -34,6 +34,8 @@ function printUptime() {
 	<li><?= $key ?>: <?= $stat ?></li>
 <?php endforeach; ?>
 </ul>
+</li>
+<li>NAS: <?php $nas_info = json_decode(file_get_contents('http://root:Vq6CS1gW@freenas/api/v1.0/storage/volume/')); echo $nas_info[0]->status; ?>, <?php echo $nas_info[0]->used_pct; ?> used (<?php echo round($nas_info[0]->used / 10e11, 2); ?>/<?php echo round($nas_info[0]->avail / 10e11, 2); ?>TB)
 </li>
 </ul>
 </section>
