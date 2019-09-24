@@ -4,3 +4,6 @@
 [submodule "arduino"]
 	path = arduino
 	url = git@github.com:ChandlerSwift/arduino-class
+[submodule "docker"]
+	path = docker
+	url = https://github.com/ChandlerSwift/docker-class.git
