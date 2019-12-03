@@ -27,6 +27,8 @@ function printUptime() {
 <h2>Servers</h2>
 <ul>
 
+<li>Router: Up <?php echo file_get_contents('https://pfsense.duluth.chandlerswift.com/get_uptime.php', false, stream_context_create(['ssl' => ['verify_peer' => false, 'verify_peer_name' => false]])); ?></li>
+
 <li>Web: Up <?= printUptime() ?> (<a href="self.php">status</a>)</li>
 
 <li>UPS: <?php $ups_info = json_decode(file_get_contents('http://ups-monitor/')); ?>
