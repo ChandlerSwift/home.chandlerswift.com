@@ -13,7 +13,7 @@ function printUptime() {
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<meta http-equiv="refresh" content="10" />
-	<title>Status | ChandlerSwift at Duluth</title>
+	<title>Status | ChandlerSwift at Eden Prairie</title>
 	<style>body{margin:1em auto;max-width:40em;padding:0 .62em;font:1.2em sans-serif; line-height: 1.62em;}h1,h2,h3{line-height:1.2em;}@media print{body{max-width:none}}</style>
 	<style>.up { background-color: #bfb; } .down { background-color: #fbb; }</style>
 	<link rel="shortcut icon" href="https://chandlerswift.com/favicon.ico" />
@@ -27,7 +27,7 @@ function printUptime() {
 <h2>Servers</h2>
 <ul>
 
-<li>Router: Up <?php echo file_get_contents('https://pfsense.duluth.chandlerswift.com/get_uptime.php', false, stream_context_create(['ssl' => ['verify_peer' => false, 'verify_peer_name' => false]])); ?></li>
+<li>Router: Up <?php echo file_get_contents('https://pfsense.edenprairie.chandlerswift.com/get_uptime.php', false, stream_context_create(['ssl' => ['verify_peer' => false, 'verify_peer_name' => false]])); ?></li>
 
 <li>Web: Up <?= printUptime() ?> (<a href="self.php">status</a>)</li>
 
