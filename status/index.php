@@ -21,7 +21,7 @@ function printUptime() {
 <body>
 <header>
 	<!-- TODO: green when good -->
-	<h1>Status | <a href="../">ChandlerSwift.com &ndash; Duluth</a></h1>
+	<h1>Status | <a href="../">ChandlerSwift.com &ndash; Eden Prairie</a></h1>
 </header>
 <section>
 <h2>Servers</h2>
