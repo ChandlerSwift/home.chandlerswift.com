@@ -7,3 +7,7 @@
 [submodule "docker"]
 	path = docker
 	url = https://github.com/ChandlerSwift/docker-class.git
+[submodule "bike-map"]
+	path = bike-map
+	url = git@github.com:chandlerswift/bike-map.git
+	branch = main
